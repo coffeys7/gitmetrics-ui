@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-row>
-      <el-col :sm="24" :md="12" :lg="6" class="resource-col" v-for="resource in resources" :key="resource.name">
+      <el-col :sm="24" :md="12" :lg="8" class="resource-col" v-for="resource in resources" :key="resource.name">
         <h1>
           {{ capitalize(resource.collection) }}
           <span class="resource-count">
