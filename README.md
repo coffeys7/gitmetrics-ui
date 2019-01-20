@@ -12,3 +12,4 @@ Front-end Vue application for working with the [Github API](https://developer.gi
 - [pluralize](https://github.com/blakeembrey/pluralize)
 - [vue-moment](https://www.npmjs.com/package/vue-moment)
 - [vue-resource](https://www.npmjs.com/package/vue-resource)
+- [showdown](https://www.npmjs.com/package/showdown)
