@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <Test msg="Hello World"></Test>
+    <ResourceGrid></ResourceGrid>
   </div>
 </template>
 
 <script>
 
-import Test from './components/Test.vue'
+import ResourceGrid from './components/ResourceGrid.vue'
 
 export default {
   name: 'app',
   components: {
-    Test
+    ResourceGrid
   }
 }
 </script>
