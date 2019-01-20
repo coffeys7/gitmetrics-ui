@@ -83,7 +83,7 @@ body, html {
 
 a {
   text-decoration: none;
-  transition: color 1s;
+  transition: color 0.25s;
 }
 
 a:hover {
@@ -94,17 +94,9 @@ a:hover {
   margin-bottom: 0.5em;
   padding: 0;
   cursor: pointer;
-  border-width: 0;
-  border-color: #3498db;
-  border-style: solid;
-  transition: border 0.15s ease;
   position: relative;
   max-height: 500px;
   overflow: auto;
-}
-
-.resource-card:hover {
-  border-width: 0 0 0 6px;
 }
 
 </style>
