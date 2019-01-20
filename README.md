@@ -1,29 +1,15 @@
-# gitmetrics-ui
+# Gitmetrics UI
 
-## Project setup
-```
-npm install
-```
+Front-end Vue application for working with the [Github API](https://developer.github.com/v3/)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- [gitmetrics](https://github.com/coffeys7/gitmetrics) - Node app for testing api w/o frontend
+- [gitmetrics-test](https://github.com/coffeys7/gitmetrics-test) - Repo for generating mock contribution activity
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Open Source Modules
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- [element-ui](https://www.npmjs.com/package/element-ui)
+- [lodash](https://www.npmjs.com/package/lodash)
+- [pluralize](https://github.com/blakeembrey/pluralize)
+- [vue-moment](https://www.npmjs.com/package/vue-moment)
+- [vue-resource](https://www.npmjs.com/package/vue-resource)
+- [showdown](https://www.npmjs.com/package/showdown)
