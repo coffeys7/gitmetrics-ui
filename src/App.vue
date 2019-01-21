@@ -67,6 +67,36 @@ body, html {
   color: #a4b0be;
 }
 
+.labels {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.labels .label {
+  margin: 0.25em;
+}
+
+.label {
+  padding: 0.25em 0.5em;
+  border-radius: 0.3em;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  text-align: center;
+}
+
+.label:hover {
+  opacity: 1.0;
+}
+
+.resource-card .labels {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.25em;;
+}
+
 .resource-card pre {
   background-color: #f1f2f6;
   padding: 0.5em;
@@ -93,6 +123,7 @@ a:hover {
 .resource-card {
   margin-bottom: 0.5em;
   padding: 0;
+  padding-bottom: 3em !important;
   cursor: pointer;
   position: relative;
   max-height: 500px;
