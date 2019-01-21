@@ -28,6 +28,13 @@
         </div>
       </template>
     </div>
+    <div class="labels">
+      <Label
+        v-for="label in resource.labels"
+        :key="label.node_id"
+        :label="label"
+      />
+    </div>
     <span class="timestamp">
       {{resource.created_at}}
     </span>
@@ -37,14 +44,19 @@
 <script>
 
 import { Mixins } from '../mixins';
+import Label from './Label.vue';
 
 export default {
   name: 'Pull',
   mixins: [
     Mixins.loading,
     Mixins.resource,
-    Mixins.markdown
+    Mixins.markdown,
+    Mixins.color
   ],
+  components: {
+    Label
+  },
   props: {
     resource: Object
   }
