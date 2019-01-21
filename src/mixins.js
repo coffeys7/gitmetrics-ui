@@ -177,6 +177,26 @@ const Mixins = {
         return converter.makeHtml(str);
       }
     }
+  },
+
+  color: {
+    methods: {
+      intensityFromRgb(rgb) {
+        let cs = { r: 0.299, g: 0.587, b: 0.114 };
+        return _.reduce(_.keys(rgb), (int, k) => int + (rgb[k] * cs[k]));
+      },
+      hexToRgb(hex) {
+        return _.chain(/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex))
+          .tail()
+          .reduce((rgb, h, i) => ({ ...rgb, [['r', 'g', 'b'][i]]: parseInt(h, 16) }), {})
+          .value();
+      },
+      getContrastText(hexColor) {
+        let rgb = this.hexToRgb(hexColor);
+        let intensity = this.intensityFromRgb(rgb);
+        return (intensity > 150) ? '#000000' : '#ffffff';
+      }
+    }
   }
 
 };
