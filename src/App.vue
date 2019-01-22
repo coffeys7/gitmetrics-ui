@@ -59,11 +59,56 @@ body, html {
 .pad-3 { padding: 0.75em !important; }
 .pad-4 { padding: 1em !important; }
 
-.resource-card .timestamp {
-  font-size: 0.7em;
+.abs-tl {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.abs-tr {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.abs-ll {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.abs-lr {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.abs-tl-1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.abs-tr-1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.abs-ll-1 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.abs-lr-1 {
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+
+.timestamp {
+  font-size: 0.7em;
   color: #a4b0be;
 }
 
@@ -84,6 +129,7 @@ body, html {
   opacity: 0.8;
   transition: opacity 0.2s;
   text-align: center;
+  padding: 0.25em;
 }
 
 .label:hover {
@@ -94,7 +140,6 @@ body, html {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 0.25em;;
 }
 
 .resource-card pre {
