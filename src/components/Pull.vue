@@ -28,14 +28,14 @@
         </div>
       </template>
     </div>
-    <div class="labels">
+    <div class="labels abs-ll">
       <Label
         v-for="label in resource.labels"
         :key="label.node_id"
         :label="label"
       />
     </div>
-    <span class="timestamp">
+    <span class="timestamp abs-lr-1">
       {{resource.created_at}}
     </span>
   </el-card>

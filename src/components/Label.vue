@@ -7,6 +7,7 @@
 <script>
 
 import { Mixins } from '../mixins';
+import _ from 'lodash';
 
 export default {
   name: 'Label',
